@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a class="logo" href="#home">MyPortfolio</a>
+                <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#signup">Signup</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero" id="home">
+            <div class="hero-inner">
+                <h1>Hi, I'm Samist — a Web Developer</h1>
+                <p>Building clean, responsive websites and web apps.</p>
+                <a class="btn" href="#signup">Get in touch</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section about">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I build accessible, responsive web experiences using HTML, CSS, and JavaScript. I enjoy problem solving and turning ideas into working products.</p>
+            </div>
+        </section>
+
+        <section id="services" class="section services">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Web Design</h3>
+                        <p>Responsive layouts, modern UI, and accessibility-minded design.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Frontend Development</h3>
+                        <p>Interactive interfaces using vanilla JS or frameworks as needed.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Consulting</h3>
+                        <p>Help with architecture, performance, and best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="signup" class="section signup">
+            <div class="container">
+                <h2>Signup / Contact</h2>
+                <form id="signup-form" class="form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" class="btn">Send</button>
+                    <p id="form-msg" class="form-msg" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
+</body>
+</html>
